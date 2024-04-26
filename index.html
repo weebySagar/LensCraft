@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LensCraft Studio</title>
+
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./styles/styles.css">
+
+
+
+    <!-- font awesonme -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap" rel="stylesheet">
+
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+
+    <!-- fancybox -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg  text-white py-0">
+            <div class="container py-2 py-md-4">
+                <a class="navbar-brand text-white" href="#">
+                    <img src="./images/aperture.png" height="50" width="50" alt="logo">
+                    <p>
+                        <span class="fw-bold">Lens</span>Craft
+                    </p>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#sidebar"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-lg fa-bars text-white"></i>
+                </button>
+                <div class="collapse navbar-collapse mt-4 mt-lg-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link p-2 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="p-2 nav-link" href="#gallery-section">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#testimonial">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link p-2 " aria-current="page" href="#about">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link p-2" href="#contact">Contact</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <!-- Hero Banner Section -->
+
+    <section class="hero-banner text-center">
+
+        <div id="hero-banner-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item ">
+                    <img src="./images/hero-banner-1.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item active">
+                    <img src="./images/hero-banner-2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/hero-banner-3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="overlay"></div>
+        <div class="hero-banner-inner">
+            <div class="inner-wrap">
+                <div class="container">
+                    <p class="subtitle">Explore the Beauty Through Our Lens</p>
+                    <h1 class="hero-title title">Discover Our World</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-carousel">
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#hero-banner-carousel"
+                data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-arrow-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#hero-banner-carousel"
+                data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-arrow-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="bottom-overlay"></div>
+
+    </section>
+
+
+    <!-- Image Grid Section -->
+
+    <section class="gallery" id="gallery-section">
+        <div class="inner-wrap">
+            <div class="container">
+                <p class="subtitle">A Mosaic of Moments Captured</p>
+                <h2 class="title">Visual Feast</h2>
+
+                <div class="content-wrap">
+                    <div class="grid-container">
+                        <!-- append images -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Testimonial Section -->
+
+    <section class="testimonial" id="testimonial">
+        <div class="inner-wrap">
+            <div class="container">
+                <p class="subtitle">Hear What Others Have to Say</p>
+                <h2 class="title">Words from Our Community</h2>
+
+
+                <div class="content-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+
+
+                            <div class="testimonial-slider">
+                                <div class="testimonial-item">
+                                    <div class="testimonial-inner">
+
+                                        <i class="quote"></i>
+                                        <p class="content">
+                                            "I had the pleasure of working with the team at LensCraft Studio for my
+                                            engagement
+                                            photos, and I couldn't be
+                                            happier with the results! They captured every moment beautifully, and their
+                                            attention to
+                                            detail is unmatched. Highly
+                                            recommend!"
+                                        </p>
+                                        <p class="person">Emily, New York City</p>
+                                    </div>
+
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-inner">
+                                        <i class="quote"></i>
+
+                                        <p class="content">"As a model, I've worked with numerous photographers, but
+                                            none
+                                            have
+                                            impressed me as much as LensCraft Studio.
+                                            Their creativity and professionalism shine through in every shot. I'm beyond
+                                            thrilled
+                                            with the images we created
+                                            together."</p>
+                                        <p class="person">Johnathan, Los Angeles</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-inner">
+                                        <i class="quote"></i>
+
+                                        <p class="content">"I've been following LensCraft Studio's work for years, so
+                                            when
+                                            it came
+                                            time for my family portraits, there was
+                                            no question who I wanted behind the camera. They exceeded all my
+                                            expectations,
+                                            and the
+                                            photos are simply breathtaking.
+                                            Thank you for capturing these precious memories!"</p>
+                                        <p class="person">Sophia, London</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-inner">
+                                        <i class="quote"></i>
+
+                                        <p class="content">"From start to finish, the team at LensCraft Studio made the
+                                            entire
+                                            process seamless. They listened to my
+                                            vision and brought it to life in ways I couldn't have imagined. Their talent
+                                            and
+                                            professionalism are second to none.
+                                            Can't wait to work together again!"</p>
+                                        <p class="person">Michael, Paris</p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-item">
+                                    <div class="testimonial-inner">
+                                        <i class="quote"></i>
+
+                                        <p class="content">"I was nervous about doing a boudoir photoshoot, but
+                                            LensCraft
+                                            Studio made me feel comfortable and empowered
+                                            every step of the way. They have a knack for capturing the essence of their
+                                            subjects,
+                                            and the photos turned out
+                                            absolutely stunning. Thank you for the unforgettable experience!"</p>
+                                        <p class="person">Sarah, Sydney</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About us Section -->
+    <section class="about-us" id="about">
+        <div class="inner-wrap">
+            <div class="container">
+                <p class="subtitle">Who We Are and What We Do</p>
+                <h2 class="title">Our Story</h2>
+
+                <div class="content-wrap">
+                    <div class="row align-items-center row-gap-4">
+                        <div class="col-md-5">
+                            <img src="./images/camera.png" alt="camera" loading="lazy" class="img-fluid">
+                        </div>
+                        <div class="col-md-7">
+                            <p>Welcome to LensCraft Studio, where we turn moments into memories and dreams into reality.
+                                We are a passionate
+                                team of photographers dedicated to capturing life's most precious moments with
+                                creativity, skill, and heart.</p>
+
+                            <!-- <br> -->
+                            <br>
+                            <p>At LensCraft Studio, we believe that photography is more than just a profession—it's a
+                                way of life. We approach
+                                each shoot with enthusiasm, professionalism, and a genuine love for what we do. Whether
+                                it's a wedding, family portrait,
+                                or corporate event, we strive to capture the essence of the moment and tell your story
+                                in a way that is authentic and
+                                timeless.</p>
+
+                            <br>
+                            <p>Ready to capture your special moments with LensCraft Studio? Contact us today to
+                                schedule your session or learn
+                                more about our services. We can't wait to be a part of your story!</p>
+                            <button class="button-primary">Get in touch</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Portfolio Section -->
+
+    <section class="portfolio">
+        <div class="inner-wrap">
+            <div class="container">
+                <p class="subtitle">A Showcase of Our Creativity</p>
+                <h2 class="title">Our Works</h2>
+
+            </div>
+            <div class="content-wrap">
+                <div class="portfolio-slider">
+                    <!-- append images -->
+                </div>
+            </div>
+        </div>
+        <div class="bottom-overlay"></div>
+
+    </section>
+
+
+    <!-- Contact Section -->
+
+    <footer id="contact">
+        <div class="bottom-overlay"></div>
+        <div class="inner-wrap">
+            <div class="container">
+                <p class="subtitle">Reach Out and Connect with Us</p>
+                <h2 class="title">Get in Touch</h2>
+
+
+                <div class="content-wrap">
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <p>Email : <a href="mailto:info@lenscraftstudio.com">info@lenscraft.com</a></p>
+                                <p>Phone : <a href="tel:+911234567890">+91 1234567890</a></p>
+                            </div>
+                            <div class="social-links">
+                                <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                                <a href="" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Sidebar -->
+    <div class="offcanvas sidebar offcanvas-end" tabindex="-1" id="sidebar" aria-labelledby="sidebar">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link p-2 active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="p-2 nav-link" href="#gallery-section">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="#testimonial">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-2 " aria-current="page" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link p-2" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="./scripts/index.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+
+    &.scrolled {
+        background-color: #373735;
+
+        .container {
+            border-bottom: none;
+            padding-top: 8px !important;
+            padding-bottom: 8px !important;
+        }
+    }
+
+    .navbar-brand {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .navbar-nav {
+
+        a {
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+        }
+    }
+
+    .container {
+
+        border-bottom: 1px solid rgba($color: $color-1, $alpha: 0.5);
+    }
+
+
+    .navbar-nav {
+        .nav-link {
+            color: $color-1;
+            font-size: 16px;
+
+            &.active {
+                color: $color-1;
+            }
+        }
+    }
+
+    .navbar-toggler {
+        border: transparent;
+
+        &:focus {
+
+            box-shadow: none;
+        }
+
+    }
+}
